@@ -208,3 +208,25 @@ Where code in Tasks has been copied from 'Tasks SQL Powered', Sytone has been sp
 Subsequently, the custom statuses implementation in Tasks has diverged from the 'Tasks SQL Powered' significantly. However, none of the new features and fixes would have been possible without Sytone's foundation work, for which we are very grateful.
 
 [^task-x-version]: 'Tasks SQL Powered' as of [revision 2c0b659](https://github.com/sytone/obsidian-tasks-x/tree/2c0b659457cc80806ff18585c955496c76861b87) on 2 August 2022
+
+---
+
+## View this page on the old documentation site
+
+> [!Info] Request for feedback
+> This page is an experimental migration of the Tasks user docs to Obsidian Publish. When the conversion is good enough, this will become the live site.
+>
+> For comparison, you can view [this page on the old documentation site](https://obsidian-tasks-group.github.io/obsidian-tasks/getting-started/statuses/).
+
+> [!Bug] Please report any problems
+>
+> We are keeping a list of [[migration#Current Status and Known Problems|Known Problems]] with the conversion.
+>
+> If you notice any other problems in this page, compared to the old one, please let us know in [#1706](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454284835).
+>
+> Please include:
+>
+> - The URL of the problem page
+> - A screenshot of the problem.
+>
+> Thank you!

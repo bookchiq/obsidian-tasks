@@ -97,3 +97,25 @@ This allows you to try out each of the buttons above, and if you don't like them
   - The mechanism to remember which sections were collapsed is not yet working.
 - Usability wise, it would be good if the 'Add New Task Status' button opened the modal to immediately edit the new status.
 - Ideally, the lists of statuses, with their delete and edit buttons, would be a table instead, with the ability to edit the properties directly in the table, instead of having to open up a modal.
+
+---
+
+## View this page on the old documentation site
+
+> [!Info] Request for feedback
+> This page is an experimental migration of the Tasks user docs to Obsidian Publish. When the conversion is good enough, this will become the live site.
+>
+> For comparison, you can view [this page on the old documentation site](https://obsidian-tasks-group.github.io/obsidian-tasks/getting-started/statuses/status-settings/).
+
+> [!Bug] Please report any problems
+>
+> We are keeping a list of [[migration#Current Status and Known Problems|Known Problems]] with the conversion.
+>
+> If you notice any other problems in this page, compared to the old one, please let us know in [#1706](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454284835).
+>
+> Please include:
+>
+> - The URL of the problem page
+> - A screenshot of the problem.
+>
+> Thank you!
