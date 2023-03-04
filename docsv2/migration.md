@@ -168,5 +168,8 @@ Folders with a comma (`,`) in their name are not supported.
 
 ## Finally
 
+- [ ] Remove the `View this page on the old documentation site` section and callouts from the script
 - [ ] Update the links in `docs-snippets/snippet-statuses-overview.md`
+- [ ] Do the final conversion.
 - [ ] Delete this `migration.md` file
+- [ ] Publish!!!
