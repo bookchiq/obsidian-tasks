@@ -1,3 +1,8 @@
+---
+publish: true
+alias: Migration to Publish
+---
+
 # Migration to Publish
 
 Notes and reminders of things to do.
