@@ -22,7 +22,7 @@ Notes and reminders of things to do.
 >
 > - At this stage, we will not improve the structure of the site
 
-### Current Status
+### Current Status and Known Problems
 
 > [!todo] Things still to be done, so known issues
 > The only known remaining problems/things to do:
@@ -45,6 +45,7 @@ Notes and reminders of things to do.
 > [!tip] Tips for reviewing the new documentation
 >
 > - You can view the new site at: [publish.obsidian.md/tasks](https://publish.obsidian.md/tasks)
+>   - At the end of each page, there is a **handy link** to the equivalent page on the old site.
 > - You can view the Markdown source in Obsidian:
 >   - download the Tasks repo on the [branch for this work](https://github.com/obsidian-tasks-group/obsidian-tasks/archive/refs/heads/port-user-guide-to-obs-publish-v2.zip):
 >   - expand `obsidian-tasks-port-user-guide-to-obs-publish-v2.zip`
