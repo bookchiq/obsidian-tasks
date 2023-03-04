@@ -32,7 +32,11 @@ Notes and reminders of things to do.
 >   - Once this is done, the links will no longer need directories in them, as the filenames will be unique.
 > - Links to **headings/sections** inside pages will be fixed to match Obsidian-style
 > - Add some **styling**, for example to top-align all table cells
-> - Broken table of values in the [[Urgency]] docs - see [this comment](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454284835)
+> - Broken table of values in the [[Urgency]] docs
+>   - see [this comment](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454284835)
+> - On the front page [[index]], there is some raw markdown visible in the '`ON THIS PAGE`' section:
+>   - `Task management for the [Obsidian](https://obsidian.md/) knowledge base`
+>   - see [this comment](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454848203)
 
 > [!bug] Bugs and annoyances that will likely not be fixed
 >
