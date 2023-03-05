@@ -41,6 +41,8 @@ Notes and reminders of things to do.
 > - On the front page [[index]], there is some raw markdown visible in the '`ON THIS PAGE`' section:
 >   - `Task management for the [Obsidian](https://obsidian.md/) knowledge base`
 >   - see [this comment](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454848203)
+>
+> If you notice any other problems, please give us the **url** and a **screenshot** in [#1706](https://github.com/obsidian-tasks-group/obsidian-tasks/issues/1706#issuecomment-1454284835). Thank you.
 
 > [!bug] Bugs and annoyances that will likely not be fixed
 >
