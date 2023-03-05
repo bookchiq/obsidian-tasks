@@ -57,7 +57,6 @@ The scores are as follows:
     <td>None</td>
     <td><code>0.0</code></td>
   </tr>
-
   <tr>
     <td rowspan="4">Priority</td>
     <td>High</td>
@@ -75,7 +74,6 @@ The scores are as follows:
     <td>Low</td>
     <td><code>0.0</code></td>
   </tr>
-
   <tr>
     <td rowspan="3">Scheduled</td>
     <td>Today or earlier</td>
@@ -89,7 +87,6 @@ The scores are as follows:
     <td>None</td>
     <td><code>0.0</code></td>
   </tr>
-
   <tr>
     <td rowspan="3">Starts</td>
     <td>Today or earlier</td>
