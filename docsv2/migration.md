@@ -120,6 +120,7 @@ The remainder is detailed notes on the conversion
 - [ ] Check programmatically that all filenames are unique
 - [ ] Write out a mapping/redirect file:
   - `Old URL` -> `New URL`
+- [ ] Test out using Aliases to point browsers to the new location of renamed files. See [Discord](https://discord.com/channels/686053708261228577/1078726185590194196/1081998454739439707).
 
 ### Links
 
@@ -178,6 +179,11 @@ Folders with a comma (`,`) in their name are not supported.
 
 - [ ] Convert indented codeblocks to fenced code blocks and add languages
 
+## Old GitHub Pages site
+
+- [ ] Set up redirects on the old site to point to the new locations
+- [ ] Stop `release.sh` merging to `gh-pages` branch.
+
 ## Finally
 
 - [ ] Remove the `View this page on the old documentation site` section and callouts from the script
@@ -185,3 +191,4 @@ Folders with a comma (`,`) in their name are not supported.
 - [ ] Do the final conversion.
 - [ ] Delete this `migration.md` file
 - [ ] Publish!!!
+- [ ] Update the Contributing Guide's [Documentation section](https://publish.obsidian.md/tasks-contributing/Documentation/Omitting+a+heading+from+the+page's+Table+of+Contents) to remove obsolete content, and update the rest with instructions for Obsidian Publish
