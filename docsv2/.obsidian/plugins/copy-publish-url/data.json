@@ -3,7 +3,7 @@
   "publishPath": "https://publish.obsidian.md/tasks/",
   "enableContext": true,
   "enableOpenUrl": true,
-  "enableGithub": true,
-  "remoteUrl": "https://github.com/obsidian-tasks-group/obsidian-tasks/",
-  "branch": "port-user-guide-to-obs-publish-v2"
+  "enableGithub": false,
+  "remoteUrl": "/",
+  "branch": ""
 }
