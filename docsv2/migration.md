@@ -22,6 +22,7 @@ Notes and reminders of things to do.
 >   - when we are ready for the final conversion
 > - And creating idiomatic Obsidian markdown
 >   - **For ease of future editing of documentation content.**
+> - As much as possible, make pages on the old site redirect to the new one.
 
 > [!failure] Non-goals of this migration
 >
@@ -117,6 +118,8 @@ The remainder is detailed notes on the conversion
   - `Getting Started`
 - [ ] Figure out how to get git on Mac to recognise the renamed files and folders
 - [ ] Check programmatically that all filenames are unique
+- [ ] Write out a mapping/redirect file:
+  - `Old URL` -> `New URL`
 
 ### Links
 
