@@ -186,9 +186,32 @@ Folders with a comma (`,`) in their name are not supported.
 
 ## Finally
 
+Changes in the conversion script before final conversion:
+
+- [ ] Remove the 'about this site' banner at top of front page
 - [ ] Remove the `View this page on the old documentation site` section and callouts from the script
+- [ ] Rework the script so that it renames and overwrites the original content in 'docs/' (instead of saving in new 'docsv2/')
+
+Actually doing the conversion
+
+- [ ] Create a new branch for the final conversion
+- [ ] Run the conversion script
 - [ ] Update the links in `docs-snippets/snippet-statuses-overview.md`
-- [ ] Do the final conversion.
-- [ ] Delete this `migration.md` file
+  - Probably by running the conversion script on it.
+- [ ] Commit the changes, being sure to 'force' commit, so all the pure 'file renamings for capitalisation' are preserved.
+- [ ] Push the changes
 - [ ] Publish!!!
+
+## Next steps
+
+- [ ] Save this `migration.md` file from branch `port-user-guide-to-obs-publish-v2` somewhere - probably attached to the PR
+- [ ] Write a script to use for when renaming files and folders in the docs
+  - Add original path as alias, to enable redirects.
+
+## Contributing guide additions
+
 - [ ] Update the Contributing Guide's [Documentation section](https://publish.obsidian.md/tasks-contributing/Documentation/Omitting+a+heading+from+the+page's+Table+of+Contents) to remove obsolete content, and update the rest with instructions for Obsidian Publish
+
+Things to mention
+
+- How to enable redirects when renaming files and folders (the script and aliases)
