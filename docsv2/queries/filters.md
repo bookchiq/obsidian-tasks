@@ -77,7 +77,7 @@ Example absolute date ranges:
 
 > [!warning]
 Prior to Tasks 2.0.0, the second date in absolute date ranges was ignored.
-See the tables in the [Appendix below]({{ site.baseurl }}{% link queries/filters.md %}#appendix-tasks-200-improvements-to-date-filters) to understand the changes in results, and whether you need to update any of your searches.
+See the tables in the [[queries/filters#appendix-tasks-200-improvements-to-date-filters|Appendix below]] to understand the changes in results, and whether you need to update any of your searches.
 
 ### Relative date ranges
 
@@ -104,7 +104,7 @@ Example relative date ranges:
 
 > [!warning]
 Prior to Tasks 2.0.0, the interpretation of relative date ranges was confusing, and not what most users naturally expected.
-See the tables in the [Appendix below]({{ site.baseurl }}{% link queries/filters.md %}#appendix-tasks-200-improvements-to-date-filters) to understand the changes in results, and whether you need to update any of your searches.
+See the tables in the [[queries/filters#appendix-tasks-200-improvements-to-date-filters|Appendix below]] to understand the changes in results, and whether you need to update any of your searches.
 
 ### Troubleshooting date searches
 
