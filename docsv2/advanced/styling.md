@@ -4,6 +4,12 @@ publish: true
 
 # Styling Tasks
 
+> [!Bug] WARNING - This page documents Unreleased Features
+>
+> This is a test copy of the documentation for features in the next release of Tasks.
+>
+> The features described here **will not work in the current Tasks release!**
+
 ## Introduction
 
 In rendered queries and Reading View, the Tasks plugin adds detailed CSS classes and data attributes that represent many of each task's content, to allow for very extensive styling options via CSS.
