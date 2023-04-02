@@ -4,31 +4,30 @@ publish: true
 
 # Styling Tasks
 
-> [!Bug] WARNING - This page documents Unreleased Features
->
-> This is a test copy of the documentation for features in the next release of Tasks.
->
-> The features described here **will not work in the current Tasks release!**
-
 ## Introduction
+
+> [!quote] Released
+Almost all the features below were introduced in Tasks 3.0.0.
 
 In rendered queries and Reading View, the Tasks plugin adds detailed CSS classes and data attributes that represent many of each task's content, to allow for very extensive styling options via CSS.
 Not only each component in a rendered task line is tagged with classes to differentiate it, many components also add classes and data attributes that represent the actual content of the task, so CSS rules can refer to data such as the relative due date of a task or its specific priority.
 
-## Please share your styles online
+### Please share your styles online
 
 We invite Tasks users who create their own Obsidian CSS snippets to share them in the ["Show and tell" Discussions category](https://github.com/obsidian-tasks-group/obsidian-tasks/discussions/categories/show-and-tell) - to inspire others and allow them to use and learn from your CSS and design skills.
 
 Thank you in advance!
 
+### Backwards compatibility and CSS snippets
+
+> [!warning]
+If you find any existing Tasks CSS snippets stopped working with Tasks 3.0.0, follow the advice in
+[[advanced/styling#appendix-fixing-css-pre-existing-snippets-for-tasks-300|Appendix: Fixing CSS pre-existing snippets for Tasks 3.0.0]] below.
+
 ## Basic Task Structure
 
 > [!quote] Released
-The following description relates to a restructuring of the rendered tasks that was introduced in Tasks X.Y.Z.
-
-> [!warning]
-If you find any existing Tasks CSS snippets stopped working with Tasks X.Y.Z, follow the advice in
-[[advanced/styling#appendix-fixing-css-pre-existing-snippets-for-tasks-xyz|Appendix: Fixing CSS pre-existing snippets for Tasks X.Y.Z]] below.
+The following description relates to a restructuring of the rendered tasks that was introduced in Tasks 3.0.0.
 
 The Tasks plugin renders a task in the following structure (this refers to query results, but the Reading View is the same except the top-most containers):
 
@@ -63,7 +62,7 @@ The reason for this additional internal span is that it allows CSS styles that c
 ## Generic Classes and Data Attributes
 
 > [!quote] Released
-Data attributes were introduced in Tasks X.Y.Z.
+Data attributes were introduced in Tasks 3.0.0.
 
 Each rendered task component (description, priority, recurrence rule etc) includes a **generic class** that denotes this type of component.
 The generic classes are:
@@ -126,7 +125,11 @@ These attributes can be used to style tasks according to their status, with the 
 
 ## Limitations of styling
 
-- It is not currently possible for styles to access any automatic scheduled date that is created if the [[getting-started/use-filename-as-default-date|Use Filename as Default Date]]  option is enabled.
+- The CSS classes and data attributes described here are **not available for markdown in Source and Live Preview modes**.
+- Specifically. the CSS classes described here are applied to:
+  - Reading mode,
+  - Tasks query blocks in Reading and Live Preview modes.
+- Styles **cannot access any automatic scheduled date** that is created if the [[getting-started/use-filename-as-default-date|Use Filename as Default Date]]  option is enabled.
 
 ## More Classes
 
@@ -144,7 +147,7 @@ The following additional components have the following classes:
 `tasks-group-heading` was introduced in Tasks 1.6.0.<br>
 `plugin-tasks-query-explanation` was introduced in Tasks 1.19.0.
 
-## Examples
+## CSS Examples
 
 ### About these examples
 
@@ -161,7 +164,7 @@ The following examples can be used as [Obsidian CSS snippets](https://help.obsid
 
 We are inviting Tasks users who create their own Obsidian CSS snippets to share them with others in the ["Show and tell" Discussions category](https://github.com/obsidian-tasks-group/obsidian-tasks/discussions/categories/show-and-tell).
 
-Once the Tasks X.Y.Z release has been out few a few days, we expect there to be a growing number of snippets to be available at the above link.
+Once the Tasks 3.0.0 release has been out few a few days, we expect there to be a growing number of snippets to be available at the above link.
 
 Feel free to add your own too!
 
@@ -403,6 +406,12 @@ span.task-extras {
     grid-column: 2;
     font-size: small;
 }
+
+/* Make sure nested bullets in Reading mode get the whole width of the grid */
+li.task-list-item ul.has-list-bullet {
+ grid-row: 3;
+ grid-column: 1/10;
+}
 ```
 <!-- endSnippet -->
 
@@ -451,14 +460,19 @@ span.tasks-list-text {
     border-color: var(--color-red);
 }
 
-.task-list-item[data-task-priority="low"] input[type=checkbox] {
+.task-list-item[data-task-priority="medium"] input[type=checkbox] {
+    box-shadow: 0px 0px 2px 2px var(--color-orange);
+    border-color: var(--color-orange);
+}
+
+.task-list-item[data-task-priority="normal"] input[type=checkbox] {
     box-shadow: 0px 0px 2px 2px var(--color-blue);
     border-color: var(--color-blue);
 }
 
-.task-list-item[data-task-priority="medium"] input[type=checkbox] {
-    box-shadow: 0px 0px 2px 2px var(--color-orange);
-    border-color: var(--color-orange);
+.task-list-item[data-task-priority="low"] input[type=checkbox] {
+    box-shadow: 0px 0px 2px 2px var(--color-cyan);
+    border-color: var(--color-cyan);
 }
 
 /* This part removes the regular priority emoticon */
@@ -466,15 +480,17 @@ span.task-priority {
     display: none;
 }
 
-/* A special color for the 'due' component if it's for today */
-.task-due[data-task-due="today"] span {
-    background: var(--code-property);
+/* A special color for the 'due' component if it's for today, and still needs work on */
+.task-list-item[data-task-status-type="TODO"] .task-due[data-task-due="today"] span,
+.task-list-item[data-task-status-type="IN_PROGRESS"] .task-due[data-task-due="today"] span {
+    background: var(--color-cyan);
     border-radius: 10px;
     padding: 2px 8px;
 }
 
-/* A special color for overdue due dates */
-.task-due[data-task-due^="past-"] span {
+/* A special color for overdue due dates, for tasks that still need work on */
+.task-list-item[data-task-status-type="TODO"] .task-due[data-task-due^="past-"] span,
+.task-list-item[data-task-status-type="IN_PROGRESS"] .task-due[data-task-due^="past-"] span {
     background: var(--color-pink);
     border-radius: 10px;
     padding: 2px 8px;
@@ -536,6 +552,12 @@ span.task-extras {
     grid-column: 2;
     font-size: small;
 }
+
+/* Make sure nested bullets in Reading mode get the whole width of the grid */
+li.task-list-item ul.has-list-bullet {
+ grid-row: 3;
+ grid-column: 1/10;
+}
 ```
 <!-- endSnippet -->
 
@@ -545,9 +567,9 @@ For example:
 
 ---
 
-## Appendix: Fixing CSS pre-existing snippets for Tasks X.Y.Z
+## Appendix: Fixing CSS pre-existing snippets for Tasks 3.0.0
 
-This sections explains what to do if any CSS snippets for Tasks stopped working after updating to X.Y.Z.
+This sections explains what to do if any CSS snippets for Tasks stopped working after updating to 3.0.0.
 
 ### Summary
 
@@ -564,9 +586,9 @@ The major CSS improvements documented above resulted in a tiny breaking change t
 
 The `>` in the `diff` output above means 'direct child', whereas the space means 'general child'.
 
-Since Tasks X.Y.Z, the `tasks-backlink` span is now inside another span (`tasks-extras`) and not directly below `plugin-tasks-list-item`.
+Since Tasks 3.0.0, the `tasks-backlink` span is now inside another span (`tasks-extras`) and not directly below `plugin-tasks-list-item`.
 
-So if you find that any CSS blocks for Tasks stopped working in Tasks X.Y.Z, check for any `>` and change them to spaces.
+So if you find that any CSS blocks for Tasks stopped working in Tasks 3.0.0, check for any `>` and change them to spaces.
 
 ---
 
