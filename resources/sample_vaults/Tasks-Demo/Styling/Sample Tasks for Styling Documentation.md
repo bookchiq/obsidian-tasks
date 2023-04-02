@@ -27,10 +27,10 @@ group by heading
 
 ## Due Dates
 
-- [ ] #task Something I should have done yesterday 📅 2023-03-31
-- [-] #task A task I meant to do yesterday then cancelled, with a `-` symbol 📅 2023-03-31
-- [ ] #task A task I should do today 📅 2023-04-01
-- [x] #task Something I did already today 📅 2023-04-01 ✅ 2023-04-01
+- [ ] #task Something I should have done yesterday 📅 2023-04-01
+- [-] #task A task I meant to do yesterday then cancelled, with a `-` symbol 📅 2023-04-01
+- [ ] #task A task I should do today 📅 2023-04-02
+- [x] #task Something I did already today 📅 2023-04-02 ✅ 2023-04-02
 
 ## Tags
 
@@ -49,3 +49,5 @@ Another tag example:
 
 - [x] #task Something I already did 🔼 ➕ 2023-03-11 🛫 2023-03-19 ⏳ 2023-03-18 📅 2023-04-25 ✅ 2023-04-01
 - [ ] #task Do something moderately important  🔼 🔁 every 2 weeks ➕ 2023-04-01  🛫 2023-04-09 ⏳ 2023-04-08 📅 2023-04-15
+- [ ] #task Do something that has an indented bullet note
+  - Here is a tip on how to do that
