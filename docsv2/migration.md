@@ -105,7 +105,7 @@ The remainder is detailed notes on the conversion
 
 ### File names and folders
 
-- [ ] Use file's `title` in Front Matter to rename it
+- [x] Use file's `title` in Front Matter to rename it
   - This will take care of making sure all the `index.md` files have unique names
   - I tried this, and the new names were great.
   - But some of them changed only by capitalisation - [[grouping]] -> [[Grouping]], for example.
@@ -116,11 +116,8 @@ The remainder is detailed notes on the conversion
 - [ ] Need to figure out renaming folders too - probably by string manipulation
   - `getting-started` becomes
   - `Getting Started`
-- [ ] Figure out how to get git on Mac to recognise the renamed files and folders
-- [ ] Check programmatically that all filenames are unique
-- [ ] Write out a mapping/redirect file:
-  - `Old URL` -> `New URL`
-- [ ] Test out using Aliases to point browsers to the new location of renamed files. See [Discord](https://discord.com/channels/686053708261228577/1078726185590194196/1081998454739439707).
+- [x] Figure out how to get git on Mac to recognise the renamed files and folders
+- [x] ABANDONED - Check programmatically that all filenames are unique
 
 ### Links
 
@@ -128,8 +125,8 @@ The remainder is detailed notes on the conversion
 - [ ] Update all links to section headings
   - Maybe convert hyphens in #.... (heading names) to spaces
   - Probably need to parse files and find their corresponding headings
-- [ ] If the filename and original title are the same, don't put in the `|alias`
-- [ ] Remove the need for paths to files in links
+- [x] If the filename and original title are the same, don't put in the `|alias`
+- [x] Remove the need for paths to files in links
   - By making every filename unique
 
 ### Frontmatter - other
@@ -183,6 +180,9 @@ Folders with a comma (`,`) in their name are not supported.
 
 ## Old GitHub Pages site
 
+- [ ] Write out a mapping/redirect file:
+  - `Old URL` -> `New URL`
+- [ ] Test out using Aliases to point browsers to the new location of renamed files. See [Discord](https://discord.com/channels/686053708261228577/1078726185590194196/1081998454739439707).
 - [ ] Set up redirects on the old site to point to the new locations
 - [ ] Stop `release.sh` merging to `gh-pages` branch.
 
