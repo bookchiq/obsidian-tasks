@@ -3,6 +3,7 @@
   "theme": "system",
   "enabledCssSnippets": [
     "image-soft-border",
-    "table-top-align"
+    "table-top-align",
+    "stronger-styling-on-code-samples"
   ]
 }
