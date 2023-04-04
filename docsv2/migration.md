@@ -166,9 +166,11 @@ Folders with a comma (`,`) in their name are not supported.
 
 ### Styling
 
-- [ ] Convert CSS from old site to new (for example, top-align all cells in tables)
-- [ ] I think that `text in backticks` does not stand out enough in the new site, compared to the old
-- [ ] Would really borders/key-lines around images
+- [x] Convert CSS from old site to new (for example, top-align all cells in tables)
+  - Done in both Obsidian snippets and publish.css
+- [x] I think that `text in backticks` does not stand out enough in the new site, compared to the old
+- [x] Would really borders/key-lines around images
+  - Done in both Obsidian snippets and publish.css
 
 ### Images
 
@@ -215,3 +217,6 @@ Actually doing the conversion
 Things to mention
 
 - How to enable redirects when renaming files and folders (the script and aliases)
+- When editing the CSS to improve styling, change it in two places, for consistent appearances in Obsidian and the published site:
+  - Add and enable a snippet in `docsv2/.obsidian/snippets/`
+  - Add to `docsv2/publish.css`
