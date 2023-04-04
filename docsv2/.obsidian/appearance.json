@@ -2,6 +2,7 @@
   "accentColor": "",
   "theme": "system",
   "enabledCssSnippets": [
-    "image-soft-border"
+    "image-soft-border",
+    "table-top-align"
   ]
 }
